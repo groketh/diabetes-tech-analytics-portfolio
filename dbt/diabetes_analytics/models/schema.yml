@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: stg_cdc_diabetes_prevalence
+    description: "Staging for diagnosed diabetes population by region and month."
+    columns:
+      - name: region
+        tests: [not_null]
+      - name: date_month
+        tests: [not_null]
+      - name: diagnosed_diabetes_population
+        tests:
+          - not_null
+
+  - name: stg_cgm_installed_base
+    description: "Staging for active CGM devices (by company), region, and month."
+    columns:
+      - name: region
+        tests: [not_null]
+      - name: date_month
+        tests: [not_null]
+      - name: company
+        tests: [not_null]
+      - name: active_devices
+        tests:
+          - not_null
+
+  - name: fct_cgm_adoption
+    description: "Metric: Active CGM devices per 1,000 diagnosed diabetics by region and month."
+    columns:
+      - name: region
+        tests: [not_null]
+      - name: date_month
+        tests: [not_null]
+      - name: active_cgm_per_1000
+        description: "1000 * active_devices_total / diagnosed_diabetes_population"
+        tests: [not_null]
