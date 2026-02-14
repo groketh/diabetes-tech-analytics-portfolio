@@ -1,0 +1,17 @@
+{
+  // Your dbt project folder
+  "dbtPowerUser.projectDir": "${workspaceFolder}/dbt/diabetes_analytics",
+  // Where your profiles.yml is (user-level)
+  "dbtPowerUser.profilesDir": "/Users/na0923/.dbt",
+  // Point directly to the dbt CLI executable in your venv
+  "dbtPowerUser.dbtPath": "${workspaceFolder}/.venv/bin/dbt",
+  // Optional: explicitly set the adapter (if available in your build)
+  "dbtPowerUser.adapter": "duckdb",
+  // Nice-to-haves
+  "files.associations": {
+    "*.sql": "jinja-sql",
+    "*.yml": "yaml",
+    "*.yaml": "yaml"
+  },
+  "editor.formatOnSave": true
+}

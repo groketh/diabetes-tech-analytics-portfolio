@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dbt: debug",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/dbt/diabetes_analytics"
+            },
+            "command": "dbt debug",
+            "problemMatcher": []
+        },
+        {
+            "label": "dbt: seed",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/dbt/diabetes_analytics"
+            },
+            "command": "dbt seed",
+            "problemMatcher": []
+        },
+        {
+            "label": "dbt: run",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/dbt/diabetes_analytics"
+            },
+            "command": "dbt run",
+            "problemMatcher": []
+        },
+        {
+            "label": "dbt: test",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/dbt/diabetes_analytics"
+            },
+            "command": "dbt test",
+            "problemMatcher": []
+        },
+        {
+            "label": "dbt: docs generate",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/dbt/diabetes_analytics"
+            },
+            "command": "dbt docs generate",
+            "problemMatcher": []
+        },
+        {
+            "label": "dbt: docs serve",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/dbt/diabetes_analytics"
+            },
+            "command": "dbt docs serve",
+            "problemMatcher": []
+        }
+    ]
+}

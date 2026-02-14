@@ -63,3 +63,9 @@ and should not be interpreted as factual.
 ---
 
 ## Repository Structure
+
+## Milestone: First Metric Shipped ✅
+- Metric: Active CGM devices per 1,000 diagnosed diabetics
+- Grain: region × month
+- Pipeline: seeds → staging → marts
+- dbt commands validated: seed / run / test
